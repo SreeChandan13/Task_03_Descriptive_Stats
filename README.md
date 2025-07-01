@@ -2,20 +2,19 @@
 
 This repository contains Python scripts for "Research Task 3: Descriptive Statistics with and without 3rd Party Libraries (Pandas/Polars)". The goal was to summarize social media datasets related to the 2024 US presidential elections using different Python approaches.
 
-1. Instructions to Run
-Prerequisites
+**1. Instructions to Run Prerequisites**
 
 Python 3.9+
 
 pip (Python package installer)
 
-Library Installation
+**Library Installation**
 
 Install the required libraries:
 
 pip install pandas polars matplotlib seaborn
 
-Dataset Placement
+**Dataset Placement**
 
 Download the three CSV files from the provided Google Drive link:
 https://drive.google.com/file/d/1Jq0fPb-tq76Ee_RtM58fT0_M3o-JDBwe/view?usp=sharing
@@ -37,7 +36,7 @@ python pandas_stats.py > pandas_output.txt
 python polars_stats.py > polars_output.txt
 # python visualization_script.py # Run if you have a separate visualization script
 
-2. Summary of Findings and Insights
+**2. Summary of Findings and Insights**
 This analysis highlighted key differences in data processing capabilities across pure Python, Pandas, and Polars.
 
 Data Loading Robustness: Pandas and Polars demonstrated superior ability to load and correctly interpret large, real-world CSV files compared to the custom pure Python implementation, which struggled with some datasets. This is due to their optimized, low-level backends.
@@ -48,7 +47,7 @@ Performance: While direct time measurements were not reported, the inherent desi
 
 Challenges: Initial errors in both Pandas (due to idxmax() on empty groups) and Polars (due to incorrect column naming for sorting value_counts()) were successfully resolved by implementing robust error handling and correct API usage. Grouped analyses were sometimes skipped if expected grouping columns were not found in a specific dataset.
 
-Dataset Insights:
+**Dataset Insights:**
 
 The Twitter dataset (2024_tw_posts_president_scored_anon.csv) was the largest and most complete, showing clear distributions of interaction counts (retweets, likes, replies, views). A significant portion of tweets originated from "Twitter Web App" and were in English.
 
