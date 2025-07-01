@@ -1,5 +1,5 @@
 # Task_03_Descriptive_Stats
-ask_03_Descriptive_Stats
+
 This repository contains Python scripts for "Research Task 3: Descriptive Statistics with and without 3rd Party Libraries (Pandas/Polars)". The goal was to summarize social media datasets related to the 2024 US presidential elections using different Python approaches.
 
 1. Instructions to Run
